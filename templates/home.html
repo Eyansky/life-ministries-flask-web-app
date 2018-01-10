@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>Welcome To Answers</h1>
+    <p class="lead">This is the place where you get to share everything you may have loved, questions you may have have or any other light enquiries.KARIBU KWETU!!</p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>GOOD COMMUNICATION!</h2>
+      <p>Being aware of others and their emotions means being sympathetic to misfortunes and praising positive milestones. To achieve this successfully, you need to know what is going on in other people’s lives. Getting to know co-workers on a first-name basis and holding meaningful conversations through the work week creates a better and more productive work environment. </p>
+      
+    </div>
+    <div class="col-lg-4">
+      <h2>RESPECT EVERYONE</h2>
+      <p>Encouraging others will heighten morale and appreciation in the workplace. By praising and offering words of encouragement, you help others feel they are wanted, welcomed and respected by co-workers. People are much more likely to put forth their best effort if they know they are valued.</p>
+      
+   </div>
+    <div class="col-lg-4">
+      <h2>SHARE YOUR WISDOM</h2>
+      <p>Efficient communication is the ability to deliver a clear message in the shortest amount of time. ... The receiver may feel the brevity is insufficient and may need more clarity in order for the message to be delivered effectively.</p>
+      
+    </div>
+  </div>
+{% endblock %}
